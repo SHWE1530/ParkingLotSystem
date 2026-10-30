@@ -12,7 +12,11 @@ public class ParkingLotService {
         this.repository = repository;
     }
 
-    public void createParkingLot(String parkingLotName) {
+    public ParkingLotRepository getRepository() {
+        return repository;
+    }
+
+    public void createParkingLot(String name, String address) {
 
         if (parkingLotName == null || parkingLotName.isBlank()) {
             System.out.println("Parking lot name cannot be empty.");
