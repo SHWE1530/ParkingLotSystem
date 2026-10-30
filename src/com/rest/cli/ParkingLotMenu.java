@@ -19,6 +19,11 @@ public class ParkingLotMenu {
         service = new ParkingLotService(repository);
     }
 
+    public ParkingLotMenu(ParkingLotService service, Scanner scanner) {
+        this.service = service;
+        this.scanner = scanner;
+    }
+
     public void start() {
 
         int choice;

@@ -13,6 +13,10 @@ public class ParkingLotService {
         this.repository = repository;
     }
 
+    public ParkingLotRepository getRepository() {
+        return repository;
+    }
+
     public void createParkingLot(String name, String address) {
 
         if (name == null || name.isBlank()
